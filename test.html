@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App With Vanilla JS</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" class="rel">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit-pro.fontawesome.com/releases/v5.10.1/js/pro.min.js" data-auto-fetch-svg></script>
+</head>
+<body>
+    <!-- https://images.unsplash.com/photo-1576506295286-5cda18df43e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aWNlJTIwY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60
+    https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60
+    https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFyYmVxdWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60
+     -->
+    <div class="container" style="width: 95%; margin: 0 auto 150px;">
+        <p class="notification" style="margin-top: 150px;"><i class='fas fa-bell'></i> Cognac and Vodka Drinkers Meeting <span class="time">4PM</span></p>
+        <ul class="btn-menu">
+            <li>Weather</li>
+            <li>Food</li>
+            <li>Apps</li>
+            <li>Movies</li>
+        </ul>
+        <div class="youtube-btn"><i class='fab fa-youtube' style="color: red;"></i> Hyperplexed</div>
+        <div class="weather-widget">
+            <p class="title"><i class="fas fa-sun" style="font-size:18px"></i>  This week's weather forecast</p>
+            <ul class="weather-widget-row">
+                <li>
+                    <p class="temperature">72<span>&#8451;</span></p>
+                    <i class='fas fa-sun' style='font-size:40px;color:yellow'></i>
+                    <span class="day">Mon</span>
+                </li>
+                <li>
+                    <p class="temperature">72<span>&#8451;</span></p>
+                    <i class='fas fa-cloud-showers-heavy' style='font-size:40px;'></i>
+                    <span class="day">Tue</span>
+                </li>
+                <li>
+                    <p class="temperature">72<span>&#8451;</span></p>
+                    <i class='fas fa-cloud-sun' style='font-size:40px;'></i>
+                    <span class="day">Wed</span>
+                </li>
+                <li>
+                    <p class="temperature">72<span>&#8451;</span></p>
+                    <i class='fas fa-cloud-sun-rain' style='font-size:40px;'></i>
+                    <span class="day">Thu</span>
+                </li>
+                <li>
+                    <p class="temperature">72<span>&#8451;</span></p>
+                    <i class='	fas fa-bolt' style='font-size:40px;'></i>
+                    <span class="day">Fri</span>
+                </li>
+                <li>
+                    <p class="temperature">72<span>&#8451;</span></p>
+                    <i class='fas fa-sun' style='font-size:40px;color:yellow'></i>
+                    <span class="day">Sat</span>
+                </li>
+                <li>
+                    <p class="temperature">72<span>&#8451;</span></p>
+                    <i class='fas fa-sun' style='font-size:40px;color:yellow'></i>
+                    <span class="day">Sun</span>
+                </li>
+            </ul>
+        </div>
+        <div class="food-widget">
+            <p class="title"><i class="fas fa-pizza-slice" style="font-size:18px"></i> Satisfy your cravings!</p>
+            <ul class="food-widget-row">
+                <li>
+                    <div class="item-bg">
+                        <div class="details">
+                            <span class="title">Title</span>
+                            <span class="desc">Description</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-bg">
+                        <div class="details">
+                            <span class="title">Title</span>
+                            <span class="desc">Description</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="activity-widget">
+            <p class="title"><i class="fas fa-toolbox" style="font-size:18px"></i> Fun things to do!</p>
+            <ul class="activity-widget-row">
+                <li>
+                    <div class="item-bg"></div>
+                    <div class="details">
+                        <div>
+                            <span class="title">Games</span>
+                            <span class="desc">Gamey</span>
+                        </div>
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-bg"></div>
+                    <div class="details">
+                        <div>
+                            <span class="title">Bank</span>
+                            <span class="desc">Cashy</span>
+                        </div>
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-bg"></div>
+                    <div class="details">
+                        <div>
+                            <span class="title">Travel</span>
+                            <span class="desc">Emirates</span>
+                        </div>
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="movie-widget">
+            <p class="title"><i class="fas fa-toolbox" style="font-size:18px"></i> Grab your popcorn!</p>
+            <ul class="activity-widget-row movie-widget-row">
+                <li>
+                    <div class="item-bg"></div>
+                    <div class="details">
+                        <div>
+                            <span class="title">Games</span>
+                            <span class="desc">A tale of some people watching over a large portion of space.</span>
+                        </div>
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-bg"></div>
+                    <div class="details">
+                        <div>
+                            <span class="title">Bank</span>
+                            <span class="desc">Cashy</span>
+                        </div>
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-bg"></div>
+                    <div class="details">
+                        <div>
+                            <span class="title">Travel</span>
+                            <span class="desc">Emirates</span>
+                        </div>
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
