@@ -8,6 +8,10 @@ I developed this web app with Javascript, HTML and CSS. The interface is mobile 
 
 This project challenged my ability with data structures such as arrays, event bubbling and my knowledge of the Document Object Model. 
 
+DEMO
+==========
+Check out the demo on my Codepen https://codepen.io/Dimlaw/full/zYJRmQG
+
 SCREENSHOTS
 ===================================
 
