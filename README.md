@@ -17,4 +17,4 @@ SCREENSHOTS
 
 ![App Authentication Screen](imgs/screenshots/authenticate.png)
 
-![The App](main/imgs/screenshots/fullscreen.png)
+![The App](imgs/screenshots/fullscreen.png)
