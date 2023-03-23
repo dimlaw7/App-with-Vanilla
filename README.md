@@ -11,7 +11,7 @@ This project challenged my ability with data structures such as arrays, event bu
 SCREENSHOTS
 ===================================
 
-![App Lockscreen](https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/lockScreen.png)
+![App Lockscreen](imgs/screenshots/lockScreen.png)
 
 ![App Passwordscreen](https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/password.png)
 
