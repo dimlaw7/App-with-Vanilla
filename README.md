@@ -7,3 +7,14 @@ The default 4-digit password to bypass the locksScreen is "0000".
 I developed this web app with Javascript, HTML and CSS. The interface is mobile responsive as well.
 
 This project challenged my ability with data structures such as arrays, event bubbling and my knowledge of the Document Object Model. 
+
+SCREENSOTS
+===================================
+
+![App Lockscreen] (imgs/screenshots/lockScreen.png "Lock Screen")
+
+![App Passwordscreen] (imgs/screenshots/password.png "Password Screen")
+
+![App Authentication Screen] (imgs/screenshots/authenticate.png "Authentication Screen")
+
+![The App] (imgs/screenshots/fullscreen.png "The App")
