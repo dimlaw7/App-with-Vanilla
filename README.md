@@ -1,8 +1,9 @@
-# App-with-Vanilla
-This repository is an App Menu with a lockscreen feature. 
+# TV App Menu With Lockscreen
 
-With the lockscreen feature, a password is required to access the App.
+**This repository is a web app that imitates the model of Google TV. It includes lockscreen feature that can be bypassed with a default 4-digit password.**
 
-This work is developed with the use of HTML, CSS and Javascript and was inspired by Google TV and Hyperplex.
+The default 4-digit password to bypass the locksScreen is "0000".
 
-It is mobile responsive as well.
+I developed this web app with Javascript, HTML and CSS. The interface is mobile responsive as well.
+
+This project challenged my ability with data structures such as arrays, event bubbling and my knowledge of the Document Object Model. 
