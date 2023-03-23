@@ -11,10 +11,10 @@ This project challenged my ability with data structures such as arrays, event bu
 SCREENSHOTS
 ===================================
 
-![App Lockscreen](imgs/screenshots/lockScreen.png)
+![App Lockscreen](imgs/screenshots/lockScreen.png "App Lockscreen")
 
-![App Passwordscreen](imgs/screenshots/Password.png)
+![App Passwordscreen](imgs/screenshots/Password.png "App Passwordscreen")
 
 ![App Authentication Screen](imgs/screenshots/authenticate.png)
 
-![The App](imgs/screenshots/fullscreen.png)
+![The App](imgs/screenshots/fullscreen.png "The App")
