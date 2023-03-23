@@ -8,13 +8,13 @@ I developed this web app with Javascript, HTML and CSS. The interface is mobile 
 
 This project challenged my ability with data structures such as arrays, event bubbling and my knowledge of the Document Object Model. 
 
-SCREENSOTS
+SCREENSHOTS
 ===================================
 
-![App Lockscreen] (imgs/screenshots/lockScreen.png "Lock Screen")
+![App Lockscreen] (imgs/screenshots/lockScreen.png?raw=true "Lock Screen")
 
-![App Passwordscreen] (imgs/screenshots/password.png "Password Screen")
+![App Passwordscreen] (imgs/screenshots/password.png?raw=true "Password Screen")
 
-![App Authentication Screen] (imgs/screenshots/authenticate.png "Authentication Screen")
+![App Authentication Screen] (imgs/screenshots/authenticate.png?raw=true "Authentication Screen")
 
-![The App] (imgs/screenshots/fullscreen.png "The App")
+![The App] (imgs/screenshots/fullscreen.png?raw=true "The App")
