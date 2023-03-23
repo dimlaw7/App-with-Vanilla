@@ -11,10 +11,10 @@ This project challenged my ability with data structures such as arrays, event bu
 SCREENSHOTS
 ===================================
 
-![App Lockscreen] (https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/lockScreen.png)
+![App Lockscreen](https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/lockScreen.png)
 
-![App Passwordscreen] (https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/password.png)
+![App Passwordscreen](https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/password.png)
 
-![App Authentication Screen] (https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/authenticate.png)
+![App Authentication Screen](https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/authenticate.png)
 
-![The App] (https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/fullscreen.png)
+![The App](https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/fullscreen.png)
