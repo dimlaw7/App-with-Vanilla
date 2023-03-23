@@ -13,7 +13,7 @@ SCREENSHOTS
 
 ![App Lockscreen](imgs/screenshots/lockScreen.png)
 
-![App Passwordscreen](imgs/screenshots/password.png)
+![App Passwordscreen](imgs/screenshots/Password.png)
 
 ![App Authentication Screen](imgs/screenshots/authenticate.png)
 
