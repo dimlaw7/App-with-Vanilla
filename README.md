@@ -13,8 +13,8 @@ SCREENSHOTS
 
 ![App Lockscreen](imgs/screenshots/lockScreen.png)
 
-![App Passwordscreen](https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/password.png)
+![App Passwordscreen](imgs/screenshots/password.png)
 
-![App Authentication Screen](https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/authenticate.png)
+![App Authentication Screen](imgs/screenshots/authenticate.png)
 
-![The App](https://github.com/dimlaw7/App-with-Vanilla/tree/main/imgs/screenshots/fullscreen.png)
+![The App](main/imgs/screenshots/fullscreen.png)
