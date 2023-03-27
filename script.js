@@ -29,6 +29,8 @@ const movies = {
     five: {title: "Dinner At My Place", desc: "A romantic dinner was interrupted when an overdramatic ex shows up uninvited.", image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS20eDK31rigoArgPyAbtdj-3BvkpPt065ZHggSkLAwkXhyllCa"},
 }
 
+const defaultPin = "0000";
+
 let container = document.querySelector(".container");
 container.innerHTML = `
 <div class="overlay">
@@ -40,7 +42,7 @@ container.innerHTML = `
         <input type="text" class="digit-4" maxlength="1" autocomplete="off">
     </div>
     <div class="hint">
-        <p class="pin">Enter Pin (0000) <span class="error"></span><span class="cancel">Cancel</span></p>
+        <p class="pin">Enter Pin (${defaultPin}) <span class="error"></span><span class="cancel">Cancel</span></p>
     </div>
 </div>
 <div class="lock-screen">
@@ -54,7 +56,6 @@ container.innerHTML = `
 </div>
 `;
 
-const defaultPin = 0000;
 const overlay = document.querySelector(".overlay"),
 lockScreen = document.querySelector(".lock-screen"),
 enterBtn = document.querySelector(".enter");
@@ -63,12 +64,9 @@ let passInputs = document.querySelectorAll("input");
 let loader = document.querySelector(".overlay .loader");
 let security = document.querySelector(".overlay .security");
 let hint = document.querySelector(".overlay .hint");
-let randomNumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
 
-for (let i = 0; i < 4; i++) { //Call focus function for all nodes in passInput
-    passInputs[i].addEventListener("input", inputFocus);
+const randomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
 enterBtn.addEventListener("click", () => {
@@ -106,10 +104,17 @@ function inputFocus(e) {
     }
 }
 
+passInputs.forEach(value => {
+    value.addEventListener("input", inputFocus);
+})
+
 //Keyboard events
-document.addEventListener("keypress", (e) => {
-    passInputs[inputCount].value = e.key;
-    inputFocus(e);
+document.body.addEventListener("keypress", (e) => {
+    if (!isNaN(e.key)) {
+        passInputs[inputCount].value = e.key;
+        inputFocus(e);
+    }
+    console.log(e.key);
 });
 
 //Submit Pin
@@ -118,18 +123,20 @@ function submitPin() {
     hint.style.display = "none";
     loader.style.display = "block";
     let getPin = "";
-    for (let i = 0; i < 4; i++) {
-        getPin += passInputs[i].value;
-    }
-    validatePin = getPin == defaultPin;
+    passInputs.forEach( node => {
+        getPin += node.value;
+    });
+    let validatePin = getPin == defaultPin;
+    console.log(getPin+" != "+defaultPin);
+    console.log(validatePin);
     setTimeout(() => {
         if (!validatePin) { //If pin is incorrect
             loader.style.display = "none";
             security.style.display = "block";
             hint.style.display = "block";
-            for (let i = 0; i < 4; i++) {
-                passInputs[i].style.border = "1px solid red";
-            }
+            passInputs.forEach( node => {
+                node.style.border = "1px solid red";
+            });
             document.querySelector(".error").innerText = "Invalid ";
         }
         else { //If pin is correct
@@ -168,9 +175,9 @@ function submitPin() {
 }
 
 function clearInput() {
-    for (let i = 0; i < 4; i++) {
-        passInputs[i].value = "";
-    }
+    passInputs.forEach( node => {
+        node.value = "";
+    })
     inputCount = 0;
 }
 
