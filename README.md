@@ -10,7 +10,7 @@ This project challenged my ability with data structures such as arrays, event bu
 
 DEMO
 ==========
-Check out the demo on my Codepen https://codepen.io/Dimlaw/full/zYJRmQG
+Check out the demo here https://dimlaw7.github.io/App-with-Vanilla/
 
 SCREENSHOTS
 ===================================
