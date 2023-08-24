@@ -450,12 +450,43 @@ p.title {
     transition: all 250ms;
 }
 
+.nomobile {
+    display: none;
+    position: relative;
+    top: 50vh;
+    width: 90%;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+.nomobile .info {
+    background: #2b1f1f;
+    padding: 1em;
+    border: 1px dashed red;
+    line-height: 1.5;
+}
+
+.nomobile h1 {
+    font-size: 18px;
+}
+
+.nomobile p {
+    margin-top: 1em;
+    font-size: 14px;
+}
+
 @keyframes spinloader {
     0% { transform: rotate(0deg); } 
     100% { transform: rotate(360deg); }    
 }
 
 @media screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+    .nomobile {
+        display: block;
+    }
     .food-widget-row li {
         width: 100%;
         margin: 10px 0 0;
